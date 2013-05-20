@@ -12,12 +12,12 @@ function teste1(){
 			xml1.setRequestHeader("Content-Type", "text/xml");
 			xml1.onreadystatechange = function(){
 				if (xml1.readyState == 4 && xml1.status == 200){
-					//a=xml1.responseXML;
-					//x=a.getElementsByTagName("retornoConsulta");
-					//resultado = x[0].getElementsByTagName("resultado")[0].childNodes[0].nodeValue;
-					//document.getElementById('valor_soma').value = resultado;
-					a = xml1.responseText
-					alert(a)
+					a=xml1.responseXML;
+					x=a.getElementsByTagName("retornoConsulta");
+					resultado = x[0].getElementsByTagName("resultado")[0].childNodes[0].nodeValue;
+					document.getElementById('valor_soma').value = resultado;
+					//a = xml1.responseText
+					//alert(a)
 				}
 
 			}
