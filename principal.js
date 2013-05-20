@@ -1,3 +1,3 @@
 function teste1(){
-	alert('sucesso');
+	document.getElementById('btn_teste1').value='teste realizado com sucesso';
 }
